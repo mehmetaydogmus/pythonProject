@@ -2,13 +2,11 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${browser}  chrome
-${url}   https://www.amazon.se/
 
 
 *** Test Cases ***
 LoginTest
-      open browser
+      open browser   https://www.amazon.se/     chrome
       sleep    2
       click link    xpath://*[@id="nav-link-accountList"]
       input text    xpath://*[@id="ap_email"]    zayiziya34@gmail.com
